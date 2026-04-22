@@ -592,7 +592,7 @@ def main():
 
     # ── Always write the latest embedded files ────────────────────────────────
     Path(DASHBOARD_FILE).write_text(DASHBOARD_HTML)
-    Path(SCRAPER_FILE).write_text(SCRAPER_PY)
+    Path(SCRAPER_FILE).write_text(SCRAPER_PY, encoding="utf-8")
     print(f"✅  Wrote {DASHBOARD_FILE} and {SCRAPER_FILE}")
 
     if not args.run:
